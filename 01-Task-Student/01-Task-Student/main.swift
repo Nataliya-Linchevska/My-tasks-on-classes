@@ -12,7 +12,7 @@ import Foundation
  методы:
  ввод данных в массив из n элементов в типа Student;
  упорядочить по возрастанию номера в группе;
- вывод студентов и номеров групп для студентов, если средний балл студента больше 67.
+ вывод студентов и номеров групп для студентов, если средний балл студента больше 50.
 */
 
 
@@ -44,7 +44,7 @@ arrayOfStudents.append(student6)
 
 print("Write 1 - show students ")
 print("Write 2 - sort students by number of group ")
-print("Write 3 - show students only if average rating above 67")
+print("Write 3 - show students only if average rating above 50")
 
 var whatYouWantToDo = readLine()!
 switch whatYouWantToDo {
@@ -59,11 +59,23 @@ switch whatYouWantToDo {
             })
             print(arrayOfStudents[i].information())
         }
-    case "3":
-        print("Your choice 3")
+    case "3":                       // Виводжу студентів, чий середній бал більше 50
+        var averageRatingOnePersone = 0
+        var allBallsOfOneStudent = 0
+        for countStudents in 0..<arrayOfStudents.count {
+            for bal in 0..<arrayOfStudents[countStudents].progress.count {
+                allBallsOfOneStudent += arrayOfStudents[countStudents].progress[bal]
+            }
+            averageRatingOnePersone = allBallsOfOneStudent / 10
+            allBallsOfOneStudent = 0
+            if averageRatingOnePersone > 50 {
+                print("Average rating = \(averageRatingOnePersone)")
+                print(arrayOfStudents[countStudents].information())
+
+            }
+        }
     default:
         print("Not good choice!")
-    
 }
 
 
