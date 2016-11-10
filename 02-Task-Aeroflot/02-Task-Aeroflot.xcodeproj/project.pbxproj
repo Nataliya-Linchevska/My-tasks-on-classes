@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE3C62421DD4A93D0093721B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C62411DD4A93D0093721B /* main.swift */; };
+		CE3C62491DD4ADEB0093721B /* Aeroflot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3C62481DD4ADEB0093721B /* Aeroflot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		CE3C623E1DD4A93D0093721B /* 02-Task-Aeroflot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "02-Task-Aeroflot"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3C62411DD4A93D0093721B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CE3C62481DD4ADEB0093721B /* Aeroflot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aeroflot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				CE3C62411DD4A93D0093721B /* main.swift */,
+				CE3C62481DD4ADEB0093721B /* Aeroflot.swift */,
 			);
 			path = "02-Task-Aeroflot";
 			sourceTree = "<group>";
@@ -121,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE3C62421DD4A93D0093721B /* main.swift in Sources */,
+				CE3C62491DD4ADEB0093721B /* Aeroflot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +254,7 @@
 				CE3C62471DD4A93D0093721B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
