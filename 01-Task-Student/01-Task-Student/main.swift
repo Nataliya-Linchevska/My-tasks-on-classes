@@ -19,12 +19,35 @@ import Foundation
 // Роблю функцію, яка рандомно заповнює самив успішності
 func progress() -> [Int] {
     var randomProgress = [Int]()
-    for _ in 0..<9 {
+    for _ in 0..<10 {
         randomProgress.append(Int(arc4random_uniform(100)+1))
     }
     return randomProgress
 }
 
-//Створюю студента
-var student1 = Student(name: "Petrov I.N.", group: 2, progress: progress())
-print(student1.progress)
+//Створюю масив студентів
+var arrayOfStudents = [Student]()
+
+//Створюю самих студентів і додаю до масиву
+var student1 = Student(name: "Petrov I.N.", group: 1, progress: progress())
+arrayOfStudents.append(student1)
+var student2 = Student(name: "Ivanov K.T.", group: 2, progress: progress())
+arrayOfStudents.append(student2)
+var student3 = Student(name: "Sidorov P.N.", group: 1, progress: progress())
+arrayOfStudents.append(student3)
+var student4 = Student(name: "Smirnov V.K.", group: 2, progress: progress())
+arrayOfStudents.append(student4)
+var student5 = Student(name: "Orlov P.B.", group: 1, progress: progress())
+arrayOfStudents.append(student5)
+var student6 = Student(name: "Afanasiev D.K.", group: 2, progress: progress())
+arrayOfStudents.append(student6)
+
+
+
+
+
+
+
+
+
+
