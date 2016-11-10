@@ -14,3 +14,17 @@ import Foundation
  упорядочить по возрастанию номера в группе;
  вывод студентов и номеров групп для студентов, если средний балл студента больше 67.
 */
+
+
+// Роблю функцію, яка рандомно заповнює самив успішності
+func progress() -> [Int] {
+    var randomProgress = [Int]()
+    for _ in 0..<9 {
+        randomProgress.append(Int(arc4random_uniform(100)+1))
+    }
+    return randomProgress
+}
+
+//Створюю студента
+var student1 = Student(name: "Petrov I.N.", group: 2, progress: progress())
+print(student1.progress)
