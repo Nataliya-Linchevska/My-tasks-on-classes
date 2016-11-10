@@ -17,4 +17,8 @@ class Student{
         self.group = group
         self.progress = progress
     }
+    // Додаю метод інформація
+    func information() -> String {
+        return "Name: " + name + " group: " + group.description + " Progress: \n" + progress.description + "\n"
+    }
 }

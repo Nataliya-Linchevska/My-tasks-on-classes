@@ -42,6 +42,10 @@ arrayOfStudents.append(student5)
 var student6 = Student(name: "Afanasiev D.K.", group: 2, progress: progress())
 arrayOfStudents.append(student6)
 
+// виводжу інформацію про студентів
+for i in 0..<arrayOfStudents.count {
+    print(arrayOfStudents[i].information())
+}
 
 
 
