@@ -25,27 +25,49 @@ func progress() -> [Int] {
     return randomProgress
 }
 
-//Створюю масив студентів
+// Створюю масив студентів
 var arrayOfStudents = [Student]()
 
-//Створюю самих студентів і додаю до масиву
+// Створюю самих студентів і додаю до масиву
 var student1 = Student(name: "Petrov I.N.", group: 1, progress: progress())
 arrayOfStudents.append(student1)
 var student2 = Student(name: "Ivanov K.T.", group: 2, progress: progress())
 arrayOfStudents.append(student2)
-var student3 = Student(name: "Sidorov P.N.", group: 1, progress: progress())
+var student3 = Student(name: "Sidorov P.N.", group: 3, progress: progress())
 arrayOfStudents.append(student3)
 var student4 = Student(name: "Smirnov V.K.", group: 2, progress: progress())
 arrayOfStudents.append(student4)
 var student5 = Student(name: "Orlov P.B.", group: 1, progress: progress())
 arrayOfStudents.append(student5)
-var student6 = Student(name: "Afanasiev D.K.", group: 2, progress: progress())
+var student6 = Student(name: "Afanasiev D.K.", group: 3, progress: progress())
 arrayOfStudents.append(student6)
 
-// виводжу інформацію про студентів
-for i in 0..<arrayOfStudents.count {
-    print(arrayOfStudents[i].information())
+print("Write 1 - show students ")
+print("Write 2 - sort students by number of group ")
+print("Write 3 - show students only if average rating above 67")
+
+var whatYouWantToDo = readLine()!
+switch whatYouWantToDo {
+    case "1":                       // Виводжу інформацію про студентів
+        for i in 0..<arrayOfStudents.count {
+            print(arrayOfStudents[i].information())
+        }
+    case "2":                       // Сортую по номеру групи
+        for i in 0..<arrayOfStudents.count {
+            arrayOfStudents.sort(by: { (student1, student2) -> Bool in
+                student1.group < student2.group
+            })
+            print(arrayOfStudents[i].information())
+        }
+    case "3":
+        print("Your choice 3")
+    default:
+        print("Not good choice!")
+    
 }
+
+
+
 
 
 
