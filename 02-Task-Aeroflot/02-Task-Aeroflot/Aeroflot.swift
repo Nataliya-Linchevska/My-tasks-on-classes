@@ -18,4 +18,8 @@ class Aeroflot {
         self.numberOfFlight = numberOfFlight
         self.typeOfAircraft = typeOfAircraft
     }
+    
+    func information() -> String {
+        return nameOfFlight + " " + numberOfFlight.description + " " + typeOfAircraft
+    }
 }
