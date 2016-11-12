@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3E3796F774F828237E14466CBC8D050F52902458",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "37072768C9E53AEF61F92D003C83C80725B51028" : 9223372036854775807,
+    "3E3796F774F828237E14466CBC8D050F52902458" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "010107E7-206F-4B53-9F52-C97F96EF1A34",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "37072768C9E53AEF61F92D003C83C80725B51028" : "",
+    "3E3796F774F828237E14466CBC8D050F52902458" : "My-tasks-on-classes\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "05-Task-Data",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "05-Task-Data\/05-Task-Data.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Nataliya-Linchevska\/Homework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "37072768C9E53AEF61F92D003C83C80725B51028"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Nataliya-Linchevska\/My-tasks-on-classes",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E3796F774F828237E14466CBC8D050F52902458"
+    }
+  ]
+}
