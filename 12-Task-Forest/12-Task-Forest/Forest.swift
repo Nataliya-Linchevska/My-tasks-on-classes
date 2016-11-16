@@ -30,12 +30,22 @@ class Forest {
             arrayOfTrees.remove(at: indexOfTree)
         }
     }
-    func information() -> String {
-        var strInform = ""
-        for i in 0..<arrayOfForester.count {
-            strInform += arrayOfForester[i].money.description + " "
+//    func information() -> String {
+//        var strInform = ""
+//        for i in 0..<arrayOfForester.count {
+//            strInform += arrayOfForester[i].money.description + " "
+//        }
+//        return strInform
+//    }
+    
+    func  information() -> String {
+        var forester1 = ""
+        var forester2 = ""
+        for _ in 0..<arrayOfForester.count {
+            forester1 = arrayOfForester[0].money.description
+            forester2 = arrayOfForester[1].money.description
         }
-        return strInform
+        return "forester1 have moneys: " + forester1 + " grn,  forester2 have moneys: " + forester2 + " grn"
     }
 }
 
