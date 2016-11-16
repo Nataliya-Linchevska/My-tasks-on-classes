@@ -23,12 +23,12 @@ import Foundation
  Стоимость одной минуты разговора
  Вычислить общую стои- мость разговора*/
 
-var call = CostOfCall(timeOfSpeech: 20, costOneMinute: 2.3)
-print(call.information())
+var call1 = CostOfCall(timeOfSpeech: 20, costOneMinute: 2.3)
+print(call1.information())
 print("")
 
-call = CostOfCallAlongDay(timeOfSpeech: 23, costOneMinute: 2.25, timeOfSpeechAlongDay: 125)
-print(call.information())
+var call2 = CostOfCallAlongDay(timeOfSpeech: 23, costOneMinute: 2.25, timeOfSpeechAlongDay: 125)
+print(call2.information())
 print("")
 
 // Введення з клавіатури
@@ -41,9 +41,14 @@ var costOneMinute = Double(readLine()!)!
 print("time Of Speech Along Day:")
 var timeOfSpeechAlongDay = Double(readLine()!)!
 
-call = CostOfCallAlongDay(timeOfSpeech: timeOfSpeech, costOneMinute: costOneMinute, timeOfSpeechAlongDay: timeOfSpeechAlongDay)
+var call3 = CostOfCallAlongDay(timeOfSpeech: timeOfSpeech, costOneMinute: costOneMinute, timeOfSpeechAlongDay: timeOfSpeechAlongDay)
 print("")
-print(call.information())
+print(call3.information())
+
+var call4 = call3
+var call5 = call3
+
+print(CFGetRetainCount(call3)) //провіряю кількість посилань
 
 
 
